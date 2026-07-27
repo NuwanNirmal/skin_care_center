@@ -1,0 +1,572 @@
+/* ==========================================================================
+   1. GLOBAL BASE STYLES
+   ========================================================================== */
+
+/* Set default font family, reset spacing, and apply a soft gray-green background */
+body {
+    font-family: sans-serif;   
+    margin: 0;                 
+    padding: 0;                
+    background-color: #f4f7f6; 
+}
+
+/* ==========================================================================
+   2. NAVIGATION BAR
+   ========================================================================== */
+
+/* Style the main navigation bar container with green background and flex alignment */
+.navbar {
+    background-color: #137420;        
+    padding: 15px 30px;               
+    display: flex;                    
+    justify-content: space-between;   
+    align-items: center;              
+    color: white;                     
+}
+
+/* Format the logo link styling on the left side of the navbar */
+.navbar .logo a {
+    color: white;                     
+    text-decoration: none;            
+    font-size: 20px;                  
+    font-weight: bold;                
+}
+
+/* Style the general navigation menu links with white color and spacing */
+.navbar .links a, .nav-links a {
+    color: white;                     
+    text-decoration: none;            
+    margin-left: 20px;                
+    font-size: 14px;                  
+}
+
+/* Add an underline text decoration when hovering over navigation links */
+.navbar .links a:hover, .nav-links a:hover {
+    text-decoration: underline;       
+}
+
+/* ==========================================================================
+   3. LOGIN & REGISTER FORMS
+   ========================================================================== */
+
+/* Style the white card container wrapper for login and registration forms */
+form {
+    background: white;                
+    padding: 40px;                    
+    border-radius: 8px;               
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    max-width: 450px;                 
+    width: 100%;                      
+    margin: 50px auto;                
+    box-sizing: border-box;           
+    text-align: left;                 
+}
+
+/* Format the main form titles and h1/h2 headings with center alignment */
+h1, h2, .form-title {
+    text-align: center;               
+    color: #333333;                   
+    font-size: 28px;                  
+    font-weight: 500;                 
+    margin-top: 40px;                 
+    margin-bottom: 10px;              
+}
+
+/* Style the form input labels positioned directly above each text field */
+form label, .form-label {
+    font-weight: bold;                
+    color: #333333;                   
+    margin-bottom: 8px;               
+    display: block;                   
+    margin-top: 15px;                 
+}
+
+/* Apply consistent full-width styling for text, email, and password inputs */
+form input[type="text"], 
+form input[type="email"], 
+form input[type="password"],
+.form-control {
+    width: 100%;                      
+    padding: 12px;                    
+    margin-top: 5px;                  
+    margin-bottom: 5px;               
+    border: 1px solid #cccccc;        
+    border-radius: 4px;               
+    box-sizing: border-box;           
+    font-size: 14px;                  
+}
+
+/* Change border color and add a green glow effect when an input field is focused */
+form input:focus, .form-control:focus {
+    border-color: #137420;            
+    outline: none;                    
+    box-shadow: 0 0 0 0.2rem rgba(19, 116, 32, 0.25); 
+}
+
+/* Style the primary full-width green form submission button */
+form button[type="submit"], .login-btn, .btn-submit {
+    background-color: #137420;        
+    color: white;                     
+    padding: 12px;                    
+    width: 100%;                      
+    cursor: pointer;                  
+    border: none;                     
+    font-size: 16px;                  
+    font-weight: bold;                
+    border-radius: 4px;               
+    margin-top: 25px;                 
+    transition: background 0.3s ease; 
+}
+
+/* Change the button background color to a darker green on hover state */
+form button[type="submit"]:hover, .login-btn:hover, .btn-submit:hover {
+    background-color: #0f5c19;        
+}
+
+/* Format basic anchor text links inside the white form fields */
+form a, .card-links a, .back-link a {
+    color: #137420;                   
+    text-decoration: none;            
+    font-weight: bold;                
+}
+
+/* Underline the form text links during interactive user hover states */
+form a:hover, .card-links a:hover, .back-link a:hover {
+    text-decoration: underline;       
+}
+
+/* Style the fixed bottom footer section spanning the full width of the screen */
+.footer, footer {
+    background-color: #137420;        
+    color: white;                     
+    text-align: center;               
+    padding: 15px;                    
+    font-size: 12px;                  
+    width: 100%;                      
+    box-sizing: border-box;           
+    position: fixed;                  
+    bottom: 0;                        
+    left: 0;                          
+}
+
+/* Force specific links like back-to-home buttons to center inside block spaces */
+.back-link {
+    text-align: center !important;     
+    display: block !important;         
+    width: 100% !important;            
+    margin-top: 10px !important;       
+}
+
+
+/* ==========================================================================
+   4. GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+
+/* Modernized global reset targeting cleaner typography and layout bases */
+body {
+    margin: 0;                         
+    padding: 0;                        
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f8f9fa;         
+    color: #333;                       
+}
+
+/* ==========================================================================
+   5. NAVBAR DESIGN FIX
+   ========================================================================== */
+
+/* Configure an updated navbar theme using specialized green values and box shadow */
+.navbar {
+    background-color: #0d7a2d;        
+    color: #ffffff;                    
+    padding: 15px 30px;               
+    display: flex;                    
+    justify-content: space-between;   
+    align-items: center;              
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+
+/* Set space margin to the right side of icons inside the navbar elements */
+.navbar div i {
+    margin-right: 8px;                
+}
+
+/* Arrange navigation list links horizontally using flexbox layout gap controls */
+.nav-links {
+    display: flex;                    
+    align-items: center;              
+    gap: 20px;                        
+}
+
+/* Set specific typography layout properties matching updated menu links */
+.nav-links a {
+    color: #ffffff;                    
+    text-decoration: none;            
+    font-weight: 600;                 
+    font-size: 14px;                  
+    transition: opacity 0.2s;         
+}
+
+/* Fade down the opacity of navigation link text elements on hover states */
+.nav-links a:hover {
+    opacity: 0.8;                     
+}
+
+/* ==========================================================================
+   6. USER DROPDOWN FIX
+   ========================================================================== */
+
+/* Create a relative positioning context wrapper for user dropdown elements */
+.user-dropdown {
+    position: relative;               
+    display: inline-block;            
+}
+
+/* Format the user button toggle trigger with translucent white background elements */
+.user-btn {
+    color: #ffffff;                    
+    cursor: pointer;                  
+    font-weight: 600;                 
+    font-size: 14px;                  
+    padding: 5px 10px;                
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 4px;               
+    display: flex;                    
+    align-items: center;              
+    gap: 5px;                         
+}
+
+/* Style the absolute positioned hidden dropdown panel container content */
+.dropdown-content {
+    display: none;                    
+    position: absolute;               
+    right: 0;                         
+    background-color: #ffffff;        
+    min-width: 160px;                 
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15); 
+    border-radius: 4px;               
+    z-index: 1000;                    
+    margin-top: 5px;                  
+    overflow: hidden;                 
+}
+
+/* Style individual vertical item link options placed within dropdown fields */
+.dropdown-content a {
+    color: #333333 !important;        
+    padding: 12px 16px;               
+    text-decoration: none;            
+    display: block;                   
+    font-size: 14px;                  
+    font-weight: normal;              
+    text-align: left;                 
+    border-bottom: 1px solid #f1f1f1; 
+}
+
+/* Remove horizontal border lines from the concluding child element in a dropdown */
+.dropdown-content a:last-child {
+    border-bottom: none;              
+}
+
+/* Apply light gray backdrop changes during hover transitions on drop menus */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;        
+    opacity: 1;                       
+}
+
+/* Display hidden dropdown menu sheets upon trigger component hover events */
+.user-dropdown:hover .dropdown-content {
+    display: block;                   
+}
+
+/* ==========================================================================
+   7. BANNER & GRID LAYOUT FIX
+   ========================================================================== */
+
+/* Setup layout wrappers displaying full-bleed graphic imagery under copy text overlays */
+.banner-container {
+    position: relative;               
+    width: 100%;
+    height: 450px;                    
+    overflow: hidden;
+    background-color: #000;           
+}
+
+/* Structure background banner asset positioning parameters with image scaling restrictions */
+.banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                
+    opacity: 0.55;                    
+}
+
+/* Horizontally and vertically center absolute copy blocks riding above media containers */
+.banner-text-box {
+    position: absolute;
+    top: 50%;                         
+    left: 50%;                        
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white;                     
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Apply massive headline tracking values alongside crisp protective text shadows */
+.banner-text-box h1 {
+    font-size: 42px;                  
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    letter-spacing: 1px;
+}
+
+/* Manage visual balance frameworks balancing secondary descriptor texts */
+.banner-text-box p {
+    font-size: 18px;                  
+    margin: 0;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); 
+}
+
+/* Settle standard default home menu grid header environments with large vertical spacing */
+.banner {
+    background-color: #f1f3f5;        
+    padding: 60px 20px;               
+    display: flex;                    
+    justify-content: center;          
+    align-items: center;              
+}
+
+/* Implement CSS grid column layouts splitting main display channels down into three portions */
+.hero-grid {
+    display: grid;                    
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;                        
+    max-width: 1200px;                
+    width: 100%;                      
+}
+
+/* Organize individual service profile presentation boxes with green top borders */
+.hero-card {
+    background: #ffffff;              
+    padding: 30px;                    
+    border-radius: 8px;               
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    text-align: center;               
+    border-top: 4px solid #0d7a2d;    
+}
+
+/* Target bold specific item title designations within showcase portfolios */
+.hero-card h2 {
+    color: #0d7a2d;                   
+    font-size: 22px;                  
+    margin-bottom: 15px;              
+    font-weight: 700;                 
+}
+
+/* Format comfortable paragraphs running insights on service list properties */
+.hero-card p {
+    font-size: 14px;                  
+    line-height: 2;                   
+    color: #666;                      
+    margin: 0;                        
+}
+
+/* Apply specific corporate brand color treatments targeting icon assets inside feature panels */
+.hero-card i {
+    color: #0d7a2d;                   
+}
+
+/* Format light separation rule guidelines deployed inside service card modules */
+.hero-card hr {
+    border: 0;                        
+    border-top: 1px solid #eee;       
+    margin: 20px 0;                   
+}
+
+/* ==========================================================================
+   8. WELCOME SECTION STYLE
+   ========================================================================== */
+
+/* Configure structure rules holding core informational landing block contents */
+.welcome-section {
+    text-align: center;               
+    padding: 60px 20px;               
+    background: #ffffff;              
+}
+
+/* Control large welcome copy block interface headers */
+.welcome-section h1 {
+    font-size: 28px;                  
+    color: #222;                      
+    margin-bottom: 10px;              
+}
+
+/* Stylize centered thin green horizontal lines positioned directly under headings */
+.welcome-section hr {
+    width: 60px;                      
+    height: 3px;                      
+    background-color: #0d7a2d;        
+    border: none;                     
+    margin: 0 auto 20px auto;         
+}
+
+/* Constrain structural welcome descriptions within a reader-friendly 600px frame */
+.welcome-section p {
+    font-size: 16px;                  
+    color: #666;                      
+    max-width: 600px;                 
+    margin: 0 auto;                   
+}
+
+/* ==========================================================================
+   9. FOOTER STYLE
+   ========================================================================== */
+
+/* Structure standard baseline site footer layers along default page coordinates */
+footer {
+    background-color: #176e14;         
+    color: #bbb;                      
+    text-align: center;               
+    padding: 20px;                    
+    font-size: 14px;                  
+    position: relative;               
+    bottom: 0;                        
+    width: 100%;                      
+    box-sizing: border-box;           
+}
+
+/* ==========================================================================
+   10. USER PROFILE PAGE STYLES
+   ========================================================================== */
+
+/* Set maximum layout perimeters wrapping user dashboard profile nodes */
+.profile-container {
+    max-width: 650px;                 
+    margin: 50px auto;                
+    padding: 0 20px;                  
+    box-sizing: border-box;           
+}
+
+/* Standardize layout criteria for the primary white content sheet inside profiles */
+.profile-card {
+    background: #ffffff;              
+    border-radius: 10px;              
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+    padding: 40px 30px;               
+    text-align: center;               
+    border-top: 5px solid #0d7a2d;    
+}
+
+/* Format primary large headshot iconography placeholders embedded over records metadata */
+.profile-avatar {
+    font-size: 75px;                  
+    color: #0d7a2d;                   
+    margin-bottom: 15px;              
+}
+
+/* Target bold identity titles inside active credentials presentation rows */
+.profile-card h2 {
+    margin: 0 0 8px 0;                
+    color: #222222;                   
+    font-size: 28px;                  
+    font-weight: 600;                 
+}
+
+/* Form soft capsule user type description badge containers using clear green settings */
+.profile-role {
+    background: #e8f5e9;              
+    color: #0d7a2d;                   
+    padding: 6px 16px;                
+    border-radius: 50px;              
+    font-size: 13px;                  
+    font-weight: 600;                 
+    display: inline-block;            
+    margin-bottom: 30px;              
+    letter-spacing: 0.5px;            
+}
+
+/* Style interior panel boards separating profile listings over grey backgrounds */
+.profile-details {
+    text-align: left;                 
+    margin-bottom: 30px;              
+    background: #f9f9f9;              
+    padding: 25px;                    
+    border-radius: 8px;               
+    border-left: 4px solid #0d7a2d;   
+}
+
+/* Enable flex row patterns aligning user profile record labels side-by-side */
+.detail-group {
+    display: flex;                    
+    margin-bottom: 15px;              
+    font-size: 15px;                  
+    line-height: 1.6;                 
+}
+
+/* Isolate final entries inside data boards to erase repetitive margin gaps */
+.detail-group:last-child {
+    margin-bottom: 0;                 
+}
+
+/* Reserve 35% space margins holding informational criteria label categories */
+.detail-label {
+    width: 35%;                       
+    font-weight: 600;                 
+    color: #555555;                   
+}
+
+/* Deliver remaining space widths out to real data records strings */
+.detail-value {
+    width: 65%;                       
+    color: #222222;                   
+}
+
+/* Assemble functional user tool lists flat across a uniform flex baseline */
+.profile-actions {
+    display: flex;                    
+    gap: 15px;                        
+    justify-content: center;          
+    align-items: center;              
+    margin-top: 25px;                 
+}
+
+/* Standardize base interaction link layout variables used by profile buttons */
+.btn-profile {
+    padding: 10px 22px;               
+    font-size: 14px;                  
+    font-weight: 600;                 
+    text-decoration: none;            
+    border-radius: 5px;               
+    display: inline-flex;             
+    align-items: center;              
+    gap: 8px;                         
+    transition: all 0.2s ease;        
+}
+
+/* Style the primary action tool coordinating user info update panels */
+.btn-edit {
+    background-color: #0d7a2d;        
+    color: #ffffff !important;         
+    border: 1px solid #0d7a2d;        
+}
+
+/* Shift main edit buttons over to darker tones when user hover events are ongoing */
+.btn-edit:hover {
+    background-color: #09531e;        
+    border-color: #09531e;            
+}
+
+/* Structure secondary fallback choices directing accounts back onto user dashboards */
+.btn-back {
+    background-color: #ffffff;        
+    color: #555555 !important;         
+    border: 1px solid #cccccc;        
+}
+
+/* Modify styling paths assigned across white escape links inside hover frames */
+.btn-back:hover {
+    background-color: #f5f5f5;        
+    color: #222222 !important;         
+    border-color: #999999;            
+}
